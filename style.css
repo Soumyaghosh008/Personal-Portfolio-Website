@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+/* This the overall styling config of this site. */
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+/* this is the logo-image styleing. */
+img {
+  width: 120%;
+  display: flex;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+}
+/* this is the main styling for the body part. */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #242323;
+}
+/* this is the main nav styling section. */
+nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+/* here we style the logo section. */
+.nav-logo {
+  max-width: 100px;
+  align-items: flex-start;
+}
+/* here we structured style each & every section like about, skill etc.... */
+.nav-sections {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+/* here we overall style each & every section like about, skill etc.... */
+.sections a {
+  position: relative;
+  padding-bottom: 0.85rem;
+  color: floralwhite;
+}
+/* here we style the hover effect of each & every section like about, skill etc.... */
+.sections a:hover::after {
+  width: 80%;
+}
+/* here we give some after effect of the resume button. */
+.sections a::after {
+  content: " ";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f77a36;
+  transition: all 0.2s ease;
+}
+/* here we give some styling of the resume button. */
+.resume-btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: floralwhite;
+  background-color: #f77a36;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+/* here we give some hover effect in the resume button. */
+.resume-btn:hover {
+  background-color: #d16830;
+}
+/* here we edit the hero section of our website. */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem 3rem;
+}
+/* here we edit the intro section. */
+.content h1 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  font-weight: 700;
+  color: floralwhite;
+  font-family: "Oswald" sans-serif;
+}
+/* here we give some style to the intro section. */
+.content h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px floralwhite;
+}
+/* here we edit the description section. */
+.content p {
+  margin-bottom: 2rem;
+  color: floralwhite;
+}
