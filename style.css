@@ -86,8 +86,22 @@ nav {
   margin: auto;
   padding: 5rem 3rem;
 }
+/* here we create the blur effect */
+.blur {
+  position: absolute;
+  box-shadow: 0 0 900px 50px #f77a36;
+}
+/* here we stylize the header section. */
+header {
+  position: relative;
+  padding-top: 2rem;
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+}
 /* here we edit the intro section. */
-.content h1 {
+header .content h1 {
   margin-bottom: 2rem;
   font-size: 4rem;
   font-weight: 700;
@@ -95,12 +109,72 @@ nav {
   font-family: "Oswald" sans-serif;
 }
 /* here we give some style to the intro section. */
-.content h1 span {
+header .content h1 span {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px floralwhite;
 }
 /* here we edit the description section. */
-.content p {
+header .content p {
   margin-bottom: 2rem;
   color: floralwhite;
+}
+/*here we style the section head part */
+section .header {
+  margin-bottom: 1rem;
+  color: floralwhite;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+/* here i style the header section */
+.features {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+/*here i style the card class section */
+.features .card {
+  background-color: #383838;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition: all 0.3a ease;
+}
+/* here i style the over effect of previous one */
+.features .card:hover {
+  background-color: #292929;
+  border-color: #f77a36;
+  transition: all 0.3s ease;
+}
+/* here i style the card span section */
+.features .card span {
+  display: inline-block;
+  background-color: #f77a36;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: floralwhite;
+  border-radius: 5px;
+}
+/* here we stylethe card header sectin */
+.features .card h4 {
+  margin-bottom: 0.5rem;
+  color: floralwhite;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+/* here we style the card paragraph section */
+.features .card p {
+  color: floralwhite;
+  margin-bottom: 1rem;
+}
+/* here i style the anchor point of card section */
+.features .card a {
+  color: floralwhite;
+  transition: all 0.3s ease;
+}
+/* here i style the card anchor hover style. */
+.features .card a:hover {
+  color: #f77a36;
 }
