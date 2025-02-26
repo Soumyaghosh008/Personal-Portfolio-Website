@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="image_elements/sample-logo.png" />
     <title>Portfolio | Soumyadeep Ghosh</title>
@@ -10,6 +17,7 @@
   <body>
     <!-- here i create the nav bar where all the basic ino like [ About, Projects,
     Skills, Education, Contact ] will appeare. -->
+    <!-- This is the part [1] -->
 
     <nav>
       <div class="nav-logo">
@@ -24,25 +32,81 @@
         <li class="sections"><a href="#">Education</a></li>
         <li class="sections"><a href="#">Contact</a></li>
       </ul>
-
-      <!-- here we give a button to download my resume resume, which's link is given in the button. -->
-      <button class="resume-btn" herf="#">My Resume</button>
     </nav>
     <!-- here we create the hero section of our web page -->
     <header class="container">
       <div class="content">
+        <span class="blur"></span>
+        <span class="blur"></span>
         <!-- here we give the intro of ourself -->
-        <h1>I'm <span>SAM</span>, Software Enthusiast</h1>
+        <h1>I'm <span>SAM</span>, Software <br />Enthusiast</h1>
         <p>
           <!--  here we adding a description about myself -->
           Undergraduate Computer Application Student, From Adamas University,
-          Barasat. Currently pushing myself to get my dream internship.
-          Technology excites me and i'm always prepared to dive into this world.
-          Certain skills which I learned are C Programming, C++ Programming,
-          Python Programming, R Programming, Web Development, and what i might
-          lack in skills i make up for with my determination to learn.
+          Barasat. Certain skills which I learned are C Programming, C++
+          Programming, Python Programming, R Programming, Web Development, and
+          what i might lack in skills i make up for with my determination to
+          learn.
         </p>
+        <!-- here we give a button to download my resume resume, which's link is given in the button. -->
+        <button class="resume-btn">My Resume</button>
       </div>
+      <!-- this is the image div section. For this is inactive cause thee is some unoptimization issue -->
+      <!-- <div class="image">
+        <img src="image_elements/hero-image.png" alt="hero-image" />
+      </div> -->
     </header>
+    <!-- part [1] ends here. -->
+    <!-- from here i create my [2] part -->
+
+    <section class="container">
+      <h2 class="header">My Projects</h2>
+      <div class="features">
+        <!-- this is card [1] -->
+        <div class="card">
+          <span><i class="fa-solid fa-c"></i></span>
+          <h4>Staff Management System</h4>
+          <p>
+            This is a complete C Programming based project, created to record
+            and manage all of your staff/student/visitors. For now it's a
+            Terminal based Program. For more info please go to the link bellow.
+          </p>
+          <a href="https://github.com/Soumyaghosh008/Staff-Management-System"
+            >See Now <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+        <!-- this is card [2] -->
+        <div class="card">
+          <span><i class="fa-brands fa-python"></i></span>
+          <h4>Notepad Using Pygame Library</h4>
+          <p>
+            This is a simple Python Pygame Library based notepad application
+            provides a straightforward text editing interface for users. Whether
+            you're jotting down notes, drafting code snippets, or keeping track
+            of tasks, this app has you covered.
+          </p>
+          <a href="https://github.com/Soumyaghosh008/Notepad-With-Python"
+            >See Now <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+        <!-- this is card [3] -->
+        <div class="card">
+          <span><i class="fa-brands fa-python"></i></span>
+          <h4>Network Authorization System</h4>
+          <p>
+            This is a simple program that allows you to receive notifications on
+            your personal Telegram bot whenever a device connects to your WiFi
+            network The program uses Python and leverages the Telegram Bot API
+            for seamless integration with the popular messaging platform.
+          </p>
+          <a
+            href="https://github.com/Soumyaghosh008/Network-Authorization-Using-Python"
+            >See Now <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- part [2] ends here. -->
+    <script src="index.js"></script>
   </body>
 </html>
