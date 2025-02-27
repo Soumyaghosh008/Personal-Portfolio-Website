@@ -32,7 +32,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 10rem;
 }
 /* here we style the logo section. */
 .nav-logo {
@@ -44,7 +44,9 @@ nav {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  gap: 5rem;
 }
 /* here we overall style each & every section like about, skill etc.... */
 .sections a {
@@ -130,7 +132,7 @@ section .header {
 .features {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 }
 /*here i style the card class section */
