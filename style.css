@@ -14,6 +14,7 @@ img {
   width: 120%;
   display: flex;
   cursor: default;
+  gap: 15rem;
 }
 
 a {
@@ -77,6 +78,7 @@ nav {
   background-color: #f77a36;
   border-radius: 4px;
   transition: all 0.2s ease;
+  transition: transform 0.3s ease-in-out;
 }
 /* here we give some hover effect in the resume button. */
 .resume-btn:hover {
@@ -102,9 +104,9 @@ header {
   display: flex;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 3rem;
+  gap: rem;
 }
-/* here we edit the intro section. */
+/* here we edit the intro section of h1 tag. */
 header .content h1 {
   margin-bottom: 2rem;
   font-size: 4rem;
@@ -124,7 +126,7 @@ header .content p {
 }
 /*here we style the section head part */
 section .header {
-  margin-top: 5rem;
+  margin-top: 4rem;
   color: floralwhite;
   text-align: left;
   font-size: 2.25rem;
@@ -149,6 +151,7 @@ section .header {
   padding: 1rem;
   border: 2px solid transparent;
   border-radius: 30px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3a ease;
 }
 /* here i style the over effect of previous one */
@@ -175,6 +178,13 @@ section .header {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+.features .card h6 {
+  margin-bottom: 0.5rem;
+  color: floralwhite;
+  font-size: 1rem;
+  font-weight: 500;
+}
 /* here we style the card paragraph section */
 .features .card p {
   color: floralwhite;
@@ -193,6 +203,7 @@ section .header {
 .tech-card {
   margin-top: 2rem;
   max-width: 1000px;
+  max-height: 200px;
   padding: 20px;
   background: #383838;
   border-radius: 12px;
@@ -202,7 +213,6 @@ section .header {
 }
 /* Card Hover Effect */
 .tech-card:hover {
-  background-color: #292929;
   transform: scale(1.02);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
@@ -219,7 +229,6 @@ section .header {
   width: 40px;
   height: 40px;
   object-fit: contain;
-  transition: transform 0.3s ease-in-out, opacity 0.3s;
 }
 /* Icon Hover Effect */
 .skill-icon:hover {
@@ -231,7 +240,6 @@ section .header {
   .skills-grid {
     gap: 10px;
   }
-
   .skill-icon {
     width: 50px;
     height: 50px;
