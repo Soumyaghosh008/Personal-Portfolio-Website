@@ -81,6 +81,8 @@ nav {
 /* here we give some hover effect in the resume button. */
 .resume-btn:hover {
   background-color: #d16830;
+  transform: scale(1.01);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
 /* here we edit the hero section of our website. */
 .container {
@@ -122,18 +124,24 @@ header .content p {
 }
 /*here we style the section head part */
 section .header {
-  margin-bottom: 1rem;
+  margin-top: 5rem;
   color: floralwhite;
-  text-align: center;
+  text-align: left;
   font-size: 2.25rem;
   font-weight: 600;
 }
+/* here we set the description box style. */
+.description {
+  color: floralwhite;
+  text-align: lef;
+  margin-top: 3rem;
+}
 /* here i style the header section */
 .features {
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  gap: 2rem;
 }
 /*here i style the card class section */
 .features .card {
@@ -147,6 +155,7 @@ section .header {
 .features .card:hover {
   background-color: #292929;
   border-color: #f77a36;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
 /* here i style the card span section */
@@ -179,4 +188,52 @@ section .header {
 /* here i style the card anchor hover style. */
 .features .card a:hover {
   color: #f77a36;
+}
+/* Tech Skills Card */
+.tech-card {
+  margin-top: 2rem;
+  max-width: 1000px;
+  padding: 20px;
+  background: #383838;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+/* Card Hover Effect */
+.tech-card:hover {
+  background-color: #292929;
+  transform: scale(1.02);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+/* Skills Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+/* Skill Icons */
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+}
+/* Icon Hover Effect */
+.skill-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+  .skills-grid {
+    gap: 10px;
+  }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
 }
