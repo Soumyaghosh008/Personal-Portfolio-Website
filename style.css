@@ -265,8 +265,8 @@ footer .coloumn .socials a {
 }
 footer .coloumn .socials a:hover {
   color: #fff;
-  background-color: #1d4ed8;
-  border-color: #1d4ed8;
+  background-color: #f77a36;
+  border-color: #f77a36;
 }
 
 footer .coloumn h4 {
@@ -284,7 +284,7 @@ footer .coloumn > a {
 }
 
 footer .coloumn > a:hover {
-  color: #1d4ed8;
+  color: #f77a36;
 }
 
 .copyright {
@@ -296,41 +296,169 @@ footer .coloumn > a:hover {
   text-align: center;
 }
 /* Responsive Design */
-@media (max-width: 600px) {
-  .skills-grid {
-    gap: 10px;
+/* Responsive Design */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
   }
-  .skill-icon {
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .nav-sections {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-sections.active {
+    display: flex;
+  }
+
+  .nav-logo img {
     width: 50px;
-    height: 50px;
   }
-}
-@media (width < 900px) {
-  .nav-links {
-    display: none;
+
+  .content {
+    padding: 20px;
   }
-  header {
-    grid-template-columns: repeat(1, 1fr);
+
+  .content h1 {
+    font-size: 2rem;
   }
-  header .image {
-    grid-area: 1/1/2/2;
-  }
-  .features {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  footer {
-    grid-template-columns: 1fr 200px;
-  }
-}
-@media (width < 600px) {
-  header .image::before {
-    display: none;
+
+  .content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
 
   .features {
-    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
-  footer {
-    grid-template-columns: 1fr 150px;
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-sections {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  .content h1 {
+    font-size: 1.8rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-card {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 1.6rem;
+  }
+
+  .content p {
+    font-size: 0.85rem;
+  }
+
+  .resume-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .socials a {
+    font-size: 1.2rem;
+  }
+
+  .coloumn h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 0.8rem;
+  }
+
+  .resume-btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .socials a {
+    font-size: 1rem;
+  }
+
+  .coloumn h4 {
+    font-size: 0.9rem;
   }
 }
