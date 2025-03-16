@@ -119,6 +119,10 @@ header .content h1 span {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px floralwhite;
 }
+/* here we style the hero image. */
+header .image {
+  position: relative;
+}
 /* here we edit the description section. */
 header .content p {
   margin-bottom: 2rem;
@@ -135,7 +139,7 @@ section .header {
 /* here we set the description box style. */
 .description {
   color: floralwhite;
-  text-align: lef;
+  text-align: left;
   margin-top: 3rem;
 }
 /* here i style the header section */
@@ -239,8 +243,8 @@ section .header {
 footer {
   position: relative;
   display: grid;
-  grid-template-columns: 400px repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: 400px repeat(4, 1fr);
+  gap: 15rem;
 }
 footer .coloumn .logo {
   max-width: 100px;
@@ -272,6 +276,7 @@ footer .coloumn .socials a:hover {
 footer .coloumn h4 {
   color: floralwhite;
   margin-bottom: 2rem;
+  margin-top: 4rem;
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -296,169 +301,89 @@ footer .coloumn > a:hover {
   text-align: center;
 }
 /* Responsive Design */
-/* Responsive Design */
 
-@media screen and (max-width: 1024px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: relative;
-  }
-
+@media (max-width: 900px) {
+  /* Fix Navbar - Mobile Menu Needed */
   .nav-sections {
     display: none;
+  }
+
+  /* Adjust Header Layout */
+  header {
     flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #fff;
-    width: 100%;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-sections.active {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .nav-logo img {
-    width: 50px;
+  .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
-  .content {
-    padding: 20px;
+  .image img {
+    width: 100%;
+    max-width: 300px;
   }
 
-  .content h1 {
-    font-size: 2rem;
-  }
-
-  .content p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-
+  /* Fix Grid Layout */
   .features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tech-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .skills-grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Fix Tech Box Layout */
+  .tech-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+
+  /* Fix Footer Layout */
+  footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
   }
 }
 
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-sections {
-    width: 100%;
-    position: absolute;
-    top: 50px;
-    left: 0;
-  }
-
-  .content h1 {
-    font-size: 1.8rem;
-  }
-
-  .content p {
-    font-size: 0.9rem;
-  }
-
-  .features {
-    grid-template-columns: 1fr;
-  }
-
+@media (max-width: 600px) {
+  /* Further Optimize Mobile Layout */
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .tech-card {
-    padding: 15px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .content {
-    text-align: center;
-  }
-
-  .content h1 {
-    font-size: 1.6rem;
-  }
-
-  .content p {
-    font-size: 0.85rem;
-  }
-
-  .resume-btn {
-    padding: 8px 12px;
-    font-size: 0.9rem;
-  }
-
   .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tech-box {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  footer {
     grid-template-columns: 1fr;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .socials {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .socials a {
-    font-size: 1.2rem;
-  }
-
-  .coloumn h4 {
-    font-size: 1rem;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .content h1 {
-    font-size: 1.5rem;
-  }
-
-  .content p {
-    font-size: 0.8rem;
-  }
-
-  .resume-btn {
-    padding: 6px 10px;
-    font-size: 0.8rem;
-  }
-
-  .features {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .socials a {
-    font-size: 1rem;
-  }
-
-  .coloumn h4 {
-    font-size: 0.9rem;
   }
 }
