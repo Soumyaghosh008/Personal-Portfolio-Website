@@ -14,4 +14,4 @@ This is my first portfolio website so there are some optimization or styling err
 <img src = "image_elements/Screenshot 2025-03-08 115639.png">
 <img src = "image_elements/Screenshot 2025-03-08 115652.png">
 <img src = "image_elements/Screenshot 2025-03-08 115705.png">
-<img src = "image_elements/Screenshot 2025-03-08 115718.png">
+<img src = "image_elements/Screenshot 2025-03-16 155120.png">
