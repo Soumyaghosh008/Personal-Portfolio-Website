@@ -207,7 +207,7 @@ section .header {
 .tech-card {
   margin-top: 2rem;
   max-width: 1000px;
-  max-height: 200px;
+  max-height: 500px;
   padding: 20px;
   background: #383838;
   border-radius: 12px;
