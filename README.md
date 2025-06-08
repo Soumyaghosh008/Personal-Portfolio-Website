@@ -10,8 +10,8 @@ This is my first portfolio website so there are some optimization or styling err
 
 ## Hosting Link: https://soumyaghoshportfolio.netlify.app/
 # Overview Image
-<img src = "image_elements/Screenshot 2025-03-02 015817.png">
-<img src = "image_elements/Screenshot 2025-03-08 115639.png">
-<img src = "image_elements/Screenshot 2025-03-08 115652.png">
-<img src = "image_elements/Screenshot 2025-03-08 115705.png">
-<img src = "image_elements/Screenshot 2025-03-16 155120.png">
+<img src = "image_elements/Homepage.png">
+<img src = "image_elements/Projects.png">
+<img src = "image_elements/Techs.png">
+<img src = "image_elements/education.png">
+<img src = "image_elements/footer.png">
