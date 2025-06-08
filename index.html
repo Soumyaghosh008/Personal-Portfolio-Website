@@ -22,10 +22,6 @@
     <title>Portfolio | Soumyadeep Ghosh</title>
   </head>
   <body>
-    <!-- here i create the nav bar where all the basic ino like [ About, Projects,
-    Skills, Education, Contact ] will appeare. -->
-    <!-- This is the part [1] -->
-
     <nav>
       <div class="nav-logo">
         <a href="#">
@@ -33,49 +29,42 @@
         </a>
       </div>
       <ul class="nav-sections">
-        <li class="sections"><a href="#">About</a></li>
-        <li class="sections"><a href="#">Projects</a></li>
-        <li class="sections"><a href="#">Skills</a></li>
-        <li class="sections"><a href="#">Education</a></li>
-        <li class="sections"><a href="#">Contact</a></li>
+        <li class="sections"><a href="#about">About</a></li>
+        <li class="sections"><a href="#projects">Projects</a></li>
+        <li class="sections"><a href="#skills">Skills</a></li>
+        <li class="sections"><a href="#education">Education</a></li>
+        <li class="sections"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <!-- here we create the hero section of our web page -->
-    <header class="container">
+
+    <!-- ABOUT SECTION -->
+    <header class="container" id="about">
       <div class="content">
         <span class="blur"></span>
         <span class="blur"></span>
-        <!-- here we give the intro of ourself -->
         <h1>I'm <span>SAM</span>, Software <span>Enthusiast</span></h1>
         <p>
-          <!--  here we adding a description about myself -->
           I am an <b>Undergraduate Computer Application</b> student at
           <b>Adamas University, Barasat</b>, driven by an insatiable passion for
           technology and innovation. My curiosity pushes me to explore emerging
           technologies, and I thrive on solving complex problems with a logical
           and analytical approach.
         </p>
-        <!-- here we give a button to download my resume resume, which's link is given in the button. -->
         <button class="resume-btn">My Resume</button>
       </div>
       <div class="image">
-        <img src="image_elements/hero-iamge2.png" alt="Hero-Iamge" />
+        <img src="image_elements/hero-iamge2.png" alt="Hero-Image" />
       </div>
     </header>
-    <!-- part [1] ends here. -->
-    <!-- from here i create my [2] part -->
 
-    <section class="container">
+    <!-- PROJECTS SECTION -->
+    <section class="container" id="projects">
       <h2 class="header">My Projects</h2>
       <div class="description">
         <p>
           This is a collection of my technical innovations and problem-solving
           ventures, highlighting my expertise in software development, system
-          applications, and user-friendly solutions. Each project embodies my
-          passion for technology, logical thinking, and dedication to building
-          efficient, impactful, and scalable solutions. Through continuous
-          learning and experimentation, I strive to push the boundaries of
-          development and create meaningful contributions to the tech world.
+          applications, and user-friendly solutions.
         </p>
       </div>
       <div class="features">
@@ -84,9 +73,9 @@
           <span><i class="fa-solid fa-c"></i></span>
           <h4>Staff Management System</h4>
           <p>
-            This is a complete C Programming based project, created to record
-            and manage all of your staff/student/visitors. For now it's a
-            Terminal based Program. For more info please go to the link bellow.
+            A CLI based application written in C for managing records of staff,
+            students, and visitors. Supports basic operations like adding,
+            viewing, updating, and deleting entries.
           </p>
           <a
             href="https://github.com/Soumyaghosh008/Staff-Management-System"
@@ -94,47 +83,40 @@
             >See Now <i class="fa-solid fa-arrow-right"></i
           ></a>
         </div>
-        <!-- this is card [2] -->
-        <div class="card">
+
+        <!-- this is card [2] which is temporary disabled-->
+        <!-- <div class="card">
           <span><i class="fa-brands fa-python"></i></span>
-          <h4>Notepad Using Pygame Library</h4>
+          <h4>Notepad Using Pygame</h4>
           <p>
-            This is a simple Python Pygame Library based notepad application
-            provides a straightforward text editing interface for users. Whether
-            you're jotting down notes, drafting code snippets, or keeping track
-            of tasks, this app has you covered.
+            Simple Python Pygame-based notepad for note-taking or code drafting.
           </p>
           <a
             href="https://github.com/Soumyaghosh008/Notepad-With-Python"
             target="_blank"
             >See Now <i class="fa-solid fa-arrow-right"></i
           ></a>
-        </div>
-        <!-- this is card [3] -->
-        <div class="card">
+        </div> -->
+
+        <!-- this is card [3] which is temporary disabled -->
+        <!-- <div class="card">
           <span><i class="fa-brands fa-python"></i></span>
-          <h4>Network Authorization System</h4>
-          <p>
-            This is a simple program that allows you to receive notifications on
-            your personal Telegram bot whenever a device connects to your WiFi
-            network The program uses Python and leverages the Telegram Bot API
-            for seamless integration with the popular messaging platform.
-          </p>
+          <h4>Network Authorization</h4>
+          <p>Python + Telegram Bot app to detect new devices on your Wi-Fi.</p>
           <a
             href="https://github.com/Soumyaghosh008/Network-Authorization-Using-Python"
             target="_blank"
             >See Now <i class="fa-solid fa-arrow-right"></i
           ></a>
-        </div>
+        </div> -->
+
         <!-- this is card [4] -->
         <div class="card">
           <span><i class="fa-brands fa-chrome"></i></span>
           <h4>Personal Portfolio Website</h4>
           <p>
-            A Personal Portfolio Website is a digital showcase of your skills,
-            projects, and achievements. It serves as an online resume,
-            highlighting your expertise, work experience, and personal brand. It
-            attract potential employers or clients, and establish a strong
+            A responsive personal website designed to display skills, projects,
+            and a short bio. Built to work smoothly across devices and enhance
             online presence.
           </p>
           <a
@@ -145,91 +127,59 @@
         </div>
       </div>
     </section>
-    <!-- part [2] ends here. -->
-    <!-- from here i start to create the section [3] / My skills part. -->
-    <!-- its start from here -->
-    <section class="container">
+
+    <!-- SKILLS SECTION -->
+    <section class="container" id="skills">
       <h2 class="header">My Tech Skill</h2>
       <div class="description">
         <p>
-          I have a strong foundation in programming and web development, with
-          expertise in <b>C, C++, Python, R, and modern Web Technologies</b>. My
-          problem-solving skills and logical thinking enable me to develop
-          efficient, scalable solutions. I am always eager to explore emerging
-          technologies, adapt to new challenges, and continuously expand my
-          skill set to stay ahead in the ever-evolving tech landscape.
+          I have strong foundations in <b>C, C++, Python, R, Web Tech</b>, and
+          more. I'm eager to explore new technologies continuously.
         </p>
       </div>
       <div class="tech-card">
         <div class="skills-grid">
-          <img src="/icon_elements/html.png" alt="HTML" class="skill-icon" />
-          <img src="/icon_elements/css.png" alt="CSS" class="skill-icon" />
+          <img src="icon_elements/html.png" alt="HTML" class="skill-icon" />
+          <img src="icon_elements/css.png" alt="CSS" class="skill-icon" />
+          <img src="icon_elements/javascript.png" alt="JS" class="skill-icon" />
           <img
-            src="/icon_elements/javascript.png"
-            alt="Javascript"
-            class="skill-icon"
-          />
-          <img
-            src="/icon_elements/bootstrap.png"
+            src="icon_elements/bootstrap.png"
             alt="Bootstrap"
             class="skill-icon"
           />
+          <img src="icon_elements/c-progam.png" alt="C" class="skill-icon" />
+          <img src="icon_elements/c_p_p.png" alt="C++" class="skill-icon" />
+          <img src="icon_elements/r-program.png" alt="R" class="skill-icon" />
+          <img src="icon_elements/python.png" alt="Python" class="skill-icon" />
+          <img src="icon_elements/git.png" alt="Git" class="skill-icon" />
+          <img src="icon_elements/github.png" alt="GitHub" class="skill-icon" />
           <img
-            src="/icon_elements/c-progam.png"
-            alt="C Programming"
-            class="skill-icon"
-          />
-          <img
-            src="/icon_elements/c_p_p.png"
-            alt="C++ Programming"
-            class="skill-icon"
-          />
-          <img
-            src="/icon_elements/r-program.png"
-            alt="R Programming"
-            class="skill-icon"
-          />
-          <img
-            src="/icon_elements/python.png"
-            alt="Python"
-            class="skill-icon"
-          />
-          <img src="/icon_elements/git.png" alt="Git" class="skill-icon" />
-          <img
-            src="/icon_elements/github.png"
-            alt="GitHub"
-            class="skill-icon"
-          />
-          <img
-            src="/icon_elements/firebase.png"
+            src="icon_elements/firebase.png"
             alt="Firebase"
             class="skill-icon"
           />
           <img
-            src="/icon_elements/react_native.png"
+            src="icon_elements/react_native.png"
             alt="React Native"
             class="skill-icon"
           />
           <img
-            src="/icon_elements/node_js.png"
+            src="icon_elements/node_js.png"
             alt="Node JS"
             class="skill-icon"
           />
-          <img src="/icon_elements/sql.png" alt="SQL" class="skill-icon" />
+          <img src="icon_elements/sql.png" alt="SQL" class="skill-icon" />
         </div>
       </div>
     </section>
-    <!-- part [3] ends here. -->
-    <!-- from here i start to create the section [4] / My Education.
-itstarts from here. -->
-    <section class="container">
+
+    <!-- EDUCATION SECTION -->
+    <section class="container" id="education">
       <h2 class="header">My Education</h2>
       <div class="description">
         <p>
-          I’m an undergraduate student who is passionate about technology and
-          problem-solving. Throughout my studies, I’ve been honing my
-          programming skills, exploring different technologies, and constantly
-          pushing myself to learn and grow in the ever evolving tech world.
+          I’m currently pursuing my BCA from Adamas University and I’ve built a
+          strong foundation in programming and problem-solving.
         </p>
       </div>
       <div class="features">
@@ -238,42 +188,39 @@ itstarts from here. -->
           <h4>Nona Chandanpukur Manmathanath High School</h4>
           <h6>Total Percentage: 75%</h6>
           <p>
-            I completed my Higher Secondary Education fom here. Great place to
-            learning & educate. Even you can also participate in various
-            activities.
+            Completed Higher Secondary Education with great academic engagement.
           </p>
           <a
             href="https://school.banglarshiksha.gov.in/ws/website/index/19113500704"
             target="_blank"
-            >Loacte <i class="fa-solid fa-arrow-right"></i>
-          </a>
+            >Locate <i class="fa-solid fa-arrow-right"></i
+          ></a>
         </div>
+
         <div class="card">
           <span><i class="fa-solid fa-building-columns"></i></span>
           <h4>Adamas University</h4>
           <h6>Current SGPA: 7.75</h6>
           <p>
-            I pursue my bachelor's in BCA from here. Here faculty are passionate
-            about problem-solving skills and modern software engineering. Great
-            place to build a career in technology and innovation.
+            Pursuing Bachelor's in Computer Application with focus on real-world
+            development and modern tech.
           </p>
           <a
             href="https://www.google.com/maps/place/Adamas+University/@22.7383026,88.4566127,17z"
             target="_blank"
-            >Locate <i class="fa-solid fa-arrow-right"></i>
-          </a>
+            >Locate <i class="fa-solid fa-arrow-right"></i
+          ></a>
         </div>
       </div>
     </section>
-    <!-- section [4] comes to an end here. -->
-    <!-- from here i create the last secteion / contacts / [4] th section -->
-    <!-- its starts frome Here -->
-    <footer class="container">
+
+    <!-- CONTACT SECTION -->
+    <footer class="container" id="contact">
       <span class="blur"></span>
       <span class="blur"> </span>
       <div class="coloumn">
         <div class="logo">
-          <img src="/image_elements/sample-logo2.png" alt="Logo" />
+          <img src="image_elements/sample-logo2.png" alt="Logo" />
         </div>
         <p>
           This is my complete Portfolio Website. Thank you so much to review
@@ -298,14 +245,14 @@ itstarts from here. -->
       </div>
       <div class="coloumn">
         <h4>My contacts:</h4>
-        <!-- for now the blogging site is unavailable -->
-        <a href="#">Blogs</a>
+        <a href="https://bytelogthoughts.blogspot.com" target="_blank"
+          >My Blogs</a
+        >
         <a href="#">Email: soumyadeepghosh726@gmail.com</a>
         <a href="#">Phone: +91 743930 0801</a>
       </div>
-      <!-- section 4 comes to an end here. -->
-      <!-- this is the footer part -->
     </footer>
+
     <div class="copyright">
       Copyright © 2025 Soumyadeep Ghosh. All Rights Reserved
     </div>
